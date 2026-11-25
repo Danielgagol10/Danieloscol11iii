@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -5,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#100d19">
 <title>OUR STORY</title>
+
 <style>
 :root{
   --bg:#100d19;--panel:#191526;--panel2:#211b31;--text:#f6f1ff;--muted:#b8aecb;
@@ -13,24 +15,41 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;min-height:100vh;background:
+body{
+ margin:0;min-height:100vh;background:
  radial-gradient(ellipse at 15% 5%,#6d438a33,transparent 34%),
  radial-gradient(ellipse at 85% 85%,#315b7730,transparent 35%),var(--bg);
- color:var(--text);font-family:Tahoma,"Segoe UI",sans-serif;line-height:1.9}
+ color:var(--text);font-family:Tahoma,"Segoe UI",sans-serif;line-height:1.9
+}
 button,input{font:inherit}
 button{cursor:pointer}
 button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 #app{min-height:100vh;display:flex;flex-direction:column}
-.topbar{width:min(1100px,100%);margin:auto;padding:14px 18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.topbar{
+ width:min(1100px,100%);margin:auto;padding:14px 18px 0;
+ display:flex;align-items:center;justify-content:space-between;gap:12px
+}
 .brand{font-weight:900;letter-spacing:3px;color:#e9d9ff;font-size:14px}
-.top-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.small-btn,.btn,.choice,.nav-btn{border:1px solid var(--line);color:var(--text);background:#ffffff0b;border-radius:14px;padding:10px 16px;transition:.2s}
+.top-actions{display:flex;gap:8px;flex-wrap:wrap}
+.small-btn,.btn,.choice,.nav-btn{
+ border:1px solid var(--line);color:var(--text);background:#ffffff0b;
+ border-radius:14px;padding:10px 16px;transition:.2s
+}
 .small-btn{font-size:12px;padding:7px 11px}
-.small-btn:hover,.btn:hover,.choice:hover,.nav-btn:hover{transform:translateY(-2px);border-color:#c9a8ff88;background:#b78cff18}
-main{width:min(1000px,100%);margin:0 auto;padding:24px 18px 50px;flex:1;display:flex;align-items:center;justify-content:center}
+.small-btn:hover,.btn:hover,.choice:hover,.nav-btn:hover{
+ transform:translateY(-2px);border-color:#c9a8ff88;background:#b78cff18
+}
+main{
+ width:min(1000px,100%);margin:0 auto;padding:24px 18px 50px;
+ flex:1;display:flex;align-items:center;justify-content:center
+}
 .screen{width:100%;animation:fade .35s ease}
 @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.panel{background:linear-gradient(145deg,#211a31ee,#171321f2);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,4vw,38px);box-shadow:var(--shadow);backdrop-filter:blur(10px)}
+.panel{
+ background:linear-gradient(145deg,#211a31ee,#171321f2);
+ border:1px solid var(--line);border-radius:var(--radius);
+ padding:clamp(20px,4vw,38px);box-shadow:var(--shadow);backdrop-filter:blur(10px)
+}
 .center{text-align:center}
 .kicker{color:var(--accent);font-size:12px;letter-spacing:2px;font-weight:bold}
 h1,h2,h3{line-height:1.5;margin:8px 0 16px}
@@ -39,7 +58,10 @@ h2{font-size:clamp(24px,5vw,36px)}
 h3{font-size:20px}
 p{margin:10px 0;color:#eee7f8}
 .muted{color:var(--muted)}
-.btn{background:linear-gradient(120deg,var(--accent2),#9c70d9);border:0;color:white;font-weight:bold;min-width:145px;margin:7px 4px;box-shadow:0 8px 25px #8b5acb33}
+.btn{
+ background:linear-gradient(120deg,var(--accent2),#9c70d9);border:0;color:white;
+ font-weight:bold;min-width:145px;margin:7px 4px;box-shadow:0 8px 25px #8b5acb33
+}
 .btn.secondary{background:#ffffff0c;border:1px solid var(--line);box-shadow:none}
 .btn:disabled,.nav-btn:disabled{opacity:.35;cursor:not-allowed;transform:none}
 .actions{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:24px}
@@ -52,9 +74,19 @@ p{margin:10px 0;color:#eee7f8}
 .tile{border:1px solid var(--line);background:#ffffff08;border-radius:18px;padding:18px 12px;text-align:center;color:var(--text)}
 .tile strong{display:block;letter-spacing:1px}
 .tile span{color:var(--muted);font-size:13px}
-.clock{width:min(260px,65vw);aspect-ratio:1;border:7px solid #b78cff55;border-radius:50%;margin:20px auto;position:relative;background:radial-gradient(circle,#312543,#171321 70%);box-shadow:0 0 35px #a66bdf33}
-.clock:before{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#f1dfff;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2}
-.hand{position:absolute;width:3px;height:34%;background:#e8d4ff;left:calc(50% - 1.5px);top:16%;transform-origin:bottom;transform:rotate(0deg);border-radius:4px;transition:transform 1s}
+.clock{
+ width:min(260px,65vw);aspect-ratio:1;border:7px solid #b78cff55;border-radius:50%;
+ margin:20px auto;position:relative;background:radial-gradient(circle,#312543,#171321 70%);
+ box-shadow:0 0 35px #a66bdf33
+}
+.clock:before{
+ content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#f1dfff;
+ left:50%;top:50%;transform:translate(-50%,-50%);z-index:2
+}
+.hand{
+ position:absolute;width:3px;height:34%;background:#e8d4ff;left:calc(50% - 1.5px);
+ top:16%;transform-origin:bottom;transform:rotate(0deg);border-radius:4px;transition:transform 1s
+}
 .clock-label{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;padding-top:12px;color:#e4d3ff;font-size:12px}
 .file-list{display:grid;gap:10px;margin:18px 0}
 .file{width:100%;text-align:right;border:1px solid var(--line);background:#ffffff08;color:var(--text);padding:15px 18px;border-radius:15px}
@@ -62,19 +94,28 @@ p{margin:10px 0;color:#eee7f8}
 .slide-box{min-height:190px;display:flex;align-items:center;justify-content:center}
 .nav-row{display:flex;justify-content:space-between;gap:10px;margin-top:22px}
 .nav-btn{min-width:115px}
-input[type="text"],.chat-input{width:100%;border:1px solid var(--line);border-radius:14px;background:#100d19;color:var(--text);padding:13px 15px;direction:rtl}
+input[type="text"],.chat-input{
+ width:100%;border:1px solid var(--line);border-radius:14px;background:#100d19;
+ color:var(--text);padding:13px 15px;direction:rtl
+}
 .feedback{min-height:30px;text-align:center;color:var(--good);margin-top:10px}
 .feedback.error{color:var(--bad)}
 .ai-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:14px;align-items:stretch}
 .question-sidebar,.chat-panel{background:#100d19aa;border:1px solid var(--line);border-radius:18px;padding:14px;min-width:0}
 .question-sidebar h3{font-size:15px;margin:0 0 10px}
 .question-list{display:grid;gap:7px;max-height:470px;overflow:auto;padding-left:3px}
-.question-item{width:100%;text-align:right;background:#ffffff08;color:var(--text);border:1px solid transparent;border-radius:11px;padding:9px;font-size:12px;line-height:1.7}
+.question-item{
+ width:100%;text-align:right;background:#ffffff08;color:var(--text);
+ border:1px solid transparent;border-radius:11px;padding:9px;font-size:12px;line-height:1.7
+}
 .question-item:hover,.question-item.selected{border-color:#b78cff88;background:#b78cff18}
 .question-item b{color:#d9c3ff;margin-left:5px}
 .chat-panel{display:flex;flex-direction:column;min-height:490px}
 .chat-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:10px}
-.chat-log{flex:1;min-height:250px;max-height:440px;overflow:auto;padding:12px 2px;display:flex;flex-direction:column;gap:12px}
+.chat-log{
+ flex:1;min-height:250px;max-height:440px;overflow:auto;padding:12px 2px;
+ display:flex;flex-direction:column;gap:12px
+}
 .bubble{max-width:95%;padding:11px 14px;border-radius:15px;white-space:pre-wrap;line-height:1.9;font-size:13px}
 .bubble.question{align-self:flex-start;background:#34274a;border:1px solid #b78cff33}
 .bubble.answer{align-self:flex-start;background:#1d2930;border:1px solid #80c9d333}
@@ -86,7 +127,10 @@ input[type="text"],.chat-input{width:100%;border:1px solid var(--line);border-ra
 .hidden-clue{font-size:5px;line-height:1;color:#100d19;cursor:pointer;user-select:none;text-align:center;margin-top:10px}
 .hidden-clue:focus{outline:1px solid #100d19}
 .mobile-question-toggle{display:none}
-.capsule{border:1px solid #b78cff55;background:linear-gradient(135deg,#37284e,#211a31);border-radius:18px;padding:22px;text-align:center;cursor:pointer;min-height:125px}
+.capsule{
+ border:1px solid #b78cff55;background:linear-gradient(135deg,#37284e,#211a31);
+ border-radius:18px;padding:22px;text-align:center;cursor:pointer;min-height:125px;color:var(--text)
+}
 .capsule.open{background:#2a2138}
 .lock-box{max-width:450px;margin:20px auto}
 .option-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:18px 0}
@@ -94,19 +138,34 @@ input[type="text"],.chat-input{width:100%;border:1px solid var(--line);border-ra
 .choice.correct{border-color:var(--good);background:#79d9a422}
 .choice.wrong{border-color:var(--bad);background:#ff829922}
 .quiz-progress{font-size:12px;color:var(--muted)}
-.random-stage{border-radius:22px;padding:26px 16px;background:
+.random-stage{
+ border-radius:22px;padding:26px 16px;
+ background:
  radial-gradient(circle at 10% 15%,#d9e84955,transparent 27%),
  radial-gradient(circle at 85% 12%,#f18cc455,transparent 25%),
  radial-gradient(circle at 15% 90%,#73c98b44,transparent 30%),
  radial-gradient(circle at 90% 85%,#9770dc55,transparent 28%),
  linear-gradient(135deg,#141018,#292333 50%,#111018);
- border:1px solid #ffffff35;position:relative;overflow:hidden}
+ border:1px solid #ffffff35;position:relative;overflow:hidden
+}
 .random-stage:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(45deg,#fff0,#fff1,#fff0)}
-.random-wheel{width:130px;height:130px;border-radius:50%;margin:20px auto;border:7px dotted #f7e8ff;background:conic-gradient(#86c98c,#e7df59,#ed91c1,#222,#fff,#9e7ae2,#86c98c);box-shadow:0 0 30px #fff3;display:grid;place-items:center;color:#17121e;font-weight:900}
+.random-wheel{
+ width:130px;height:130px;border-radius:50%;margin:20px auto;border:7px dotted #f7e8ff;
+ background:conic-gradient(#86c98c,#e7df59,#ed91c1,#222,#fff,#9e7ae2,#86c98c);
+ box-shadow:0 0 30px #fff3;display:grid;place-items:center;color:#17121e;font-weight:900
+}
 .spinning{animation:spin .3s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.envelope{width:min(280px,75vw);height:175px;margin:25px auto;position:relative;cursor:pointer;background:linear-gradient(145deg,#8d69bd,#4e376d);border-radius:12px;box-shadow:0 15px 35px #0006;display:grid;place-items:center;overflow:hidden}
-.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49%,#c3a1ed 50%,transparent 51%),linear-gradient(35deg,transparent 49%,#a887d3 50%,transparent 51%)}
+.envelope{
+ width:min(280px,75vw);height:175px;margin:25px auto;position:relative;cursor:pointer;
+ background:linear-gradient(145deg,#8d69bd,#4e376d);border-radius:12px;
+ box-shadow:0 15px 35px #0006;display:grid;place-items:center;overflow:hidden
+}
+.envelope:before{
+ content:"";position:absolute;inset:0;
+ background:linear-gradient(145deg,transparent 49%,#c3a1ed 50%,transparent 51%),
+ linear-gradient(35deg,transparent 49%,#a887d3 50%,transparent 51%)
+}
 .seal{position:relative;z-index:1;background:#241a32;border:2px solid #e5ceff;border-radius:50%;width:48px;height:48px;display:grid;place-items:center}
 .letter{background:#f3eafa;color:#382b46;padding:22px;border-radius:12px;line-height:2.1;text-align:right;white-space:pre-line;animation:fade .5s}
 .mind-question{margin:18px auto 8px;max-width:430px;padding:22px;border:1px solid #ffffff40;border-radius:18px;background:#171321aa}
@@ -114,32 +173,57 @@ input[type="text"],.chat-input{width:100%;border:1px solid var(--line);border-ra
 .mind-choice{border:1px solid #ffffff45;border-radius:14px;padding:14px;background:#ffffff12;color:var(--text);font-weight:bold;font-size:16px}
 .mind-choice:disabled{opacity:.7;cursor:default}
 .mind-feedback{min-height:30px;margin-top:14px;font-weight:bold}
-body.last-mode{background:
+body.last-mode{
+ background:
  radial-gradient(ellipse at 8% 12%,#86c98c35,transparent 30%),
  radial-gradient(ellipse at 90% 10%,#e7df5930,transparent 28%),
  radial-gradient(ellipse at 12% 88%,#ed91c135,transparent 30%),
  radial-gradient(ellipse at 90% 88%,#9e7ae245,transparent 32%),
- radial-gradient(ellipse at 50% 50%,#ffffff0c,transparent 55%),#100d19;color:#f6f1ff}
+ radial-gradient(ellipse at 50% 50%,#ffffff0c,transparent 55%),#100d19;
+ color:#f6f1ff
+}
 body.last-mode .topbar{color:#f6f1ff}
 body.last-mode .brand{color:#f0dfff}
 body.last-mode .small-btn{color:#f6f1ff;border-color:#ffffff35;background:#ffffff12}
 body.last-mode main{width:100%;max-width:none;min-height:calc(100vh - 100px);padding:18px 14px 28px;align-items:stretch}
 body.last-mode .footer{color:#c8bdd8}
-.last-page{width:min(820px,100%);margin:auto;padding:clamp(18px,4vw,38px);border-radius:24px;
- background:radial-gradient(circle at 8% 10%,#86c98c38,transparent 25%),radial-gradient(circle at 92% 12%,#e7df5935,transparent 25%),radial-gradient(circle at 12% 90%,#ed91c13b,transparent 27%),radial-gradient(circle at 90% 88%,#9e7ae248,transparent 27%),linear-gradient(145deg,#171321f5,#211a31f2 55%,#101018f7);
- box-shadow:0 18px 55px #0008;border:1px solid #ffffff35;text-align:center;display:flex;flex-direction:column;min-height:75vh}
+.last-page{
+ width:min(820px,100%);margin:auto;padding:clamp(18px,4vw,38px);border-radius:24px;
+ background:
+ radial-gradient(circle at 8% 10%,#86c98c38,transparent 25%),
+ radial-gradient(circle at 92% 12%,#e7df5935,transparent 25%),
+ radial-gradient(circle at 12% 90%,#ed91c13b,transparent 27%),
+ radial-gradient(circle at 90% 88%,#9e7ae248,transparent 27%),
+ linear-gradient(145deg,#171321f5,#211a31f2 55%,#101018f7);
+ box-shadow:0 18px 55px #0008;border:1px solid #ffffff35;text-align:center;
+ display:flex;flex-direction:column;min-height:75vh
+}
 .last-page .kicker{color:#d5b7ff}
 .last-page h2{color:#fff}
-.letter-window{height:min(58vh,520px);min-height:340px;overflow:hidden;position:relative;margin:16px auto 20px;width:min(650px,100%);
- border:2px solid transparent;border-image:linear-gradient(90deg,#86c98c,#e7df59,#ed91c1,#9e7ae2) 1;border-radius:12px;
- background:radial-gradient(ellipse at 10% 15%,#86c98c20,transparent 35%),radial-gradient(ellipse at 90% 85%,#9e7ae228,transparent 38%),linear-gradient(180deg,#171321,#211b2d 50%,#14111c)}
-.letter-track{position:absolute;top:0;left:0;right:0;padding:0 18px;white-space:pre-line;text-align:right;line-height:2.35;font-size:clamp(15px,2.3vw,18px);color:#f7f1ff;text-shadow:0 1px 12px #0008;animation:letterRise 52s linear forwards}
+.letter-window{
+ height:min(58vh,520px);min-height:340px;overflow:hidden;position:relative;
+ margin:16px auto 20px;width:min(650px,100%);
+ border:2px solid transparent;border-image:linear-gradient(90deg,#86c98c,#e7df59,#ed91c1,#9e7ae2) 1;
+ border-radius:12px;
+ background:
+ radial-gradient(ellipse at 10% 15%,#86c98c20,transparent 35%),
+ radial-gradient(ellipse at 90% 85%,#9e7ae228,transparent 38%),
+ linear-gradient(180deg,#171321,#211b2d 50%,#14111c)
+}
+.letter-track{
+ position:absolute;top:0;left:0;right:0;padding:0 18px;white-space:pre-line;
+ text-align:right;line-height:2.35;font-size:clamp(15px,2.3vw,18px);
+ color:#f7f1ff;text-shadow:0 1px 12px #0008;
+ animation:letterRise 52s linear forwards
+}
 @keyframes letterRise{from{transform:translateY(100%)}to{transform:translateY(calc(-100% - min(58vh,520px)))}}
 .last-end{color:#7950a8;letter-spacing:4px;margin:8px 0 0}
 .last-page .actions{margin-top:auto}
 .footer{text-align:center;color:#716881;font-size:11px;padding:0 15px 18px}
+
 @media(max-width:720px){
- main{padding:18px 12px 35px}.topbar{padding:12px}
+ main{padding:18px 12px 35px}
+ .topbar{padding:12px}
  .ai-layout{grid-template-columns:1fr}
  .question-sidebar{display:none}
  .question-sidebar.mobile-open{display:block}
@@ -152,28 +236,37 @@ body.last-mode .footer{color:#c8bdd8}
  .letter-window{height:54vh;min-height:300px}
  .letter-track{animation-duration:58s;padding:0 8px}
 }
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
 </style>
 </head>
+
 <body>
 <div id="app">
-  <header class="topbar">
-    <div class="brand">OUR STORY</div>
-    <div class="top-actions">
-      <button class="small-btn" id="homeBtn" type="button">صفحه اصلی</button>
-      <button class="small-btn" id="resetBtn" type="button">شروع مجدد</button>
-      <button class="small-btn" id="musicBtn" type="button" aria-pressed="false">♫ MUSIC OFF</button>
-    </div>
-  </header>
-  <audio id="backgroundMusic" loop preload="none">
-<source src="https://danielgagol10.github.io/Danieloscol11iii/omid_jahan_hele_dan%20dan%20128%20(1)%20(1).mp3" type="audio/mpeg">
-  <main id="main"></main>
-  <footer class="footer">OUR STORY · made with memories</footer>
+
+<header class="topbar">
+ <div class="brand">OUR STORY</div>
+ <div class="top-actions">
+  <button class="small-btn" id="homeBtn" type="button">صفحه اصلی</button>
+  <button class="small-btn" id="resetBtn" type="button">شروع مجدد</button>
+  <button class="small-btn" id="musicBtn" type="button" aria-pressed="false">♫ MUSIC OFF</button>
+ </div>
+</header>
+
+<audio id="backgroundMusic" loop preload="none" playsinline>
+ <source src="https://raw.githubusercontent.com/Danielgagol10/Danieloscol11iii/refs/heads/main/omid_jahan_hele_dan%20dan%20128%20(1)%20(1).mp3" type="audio/mpeg">
+</audio>
+
+<main id="main"></main>
+<footer class="footer">OUR STORY · made with memories</footer>
 </div>
+
 <script>
 "use strict";
 
 const STORAGE_KEY = "ourStoryProgress_v1";
+
 const QUESTIONS = [
  ["اولین برداشتی که از من داشتی چی بود؟","یه آدم خودشیفته 😂"],
  ["اولین چیزی که درباره من توجهت رو جلب کرد چی بود؟","اصلاً فراموش کرده بودم! تو گروه جرئت حقیقت یه سؤال بود: خودتو تو سه کلمه توصیف کن. جواب تو رو هنوز یادمه، یه چیزی تو مایه‌های آدم خوب و مهربون و خونگرم و باجنبه نوشته بودی. من با خودم گفتم یا ابلفضل چقدر خودشیفته‌ست 😂"],
@@ -186,21 +279,25 @@ const QUESTIONS = [
  ["تا حالا شده بخوای چیزی بهم بگی ولی منصرف بشی؟","یس"],
  ["چه چیزی رفاقتمون رو متفاوت کرده؟","من 🥸"]
 ];
+
 const PAST = [
  "از اولین آشناییمون توی گروه چیز زیادی یادم نیست، ولی یادمه بعدش اومدی پیوی...\n\nحالا بماند اوایل می‌خواستم از پیویم بری ولی خب 🥸\n\nولی رومخ هم بودی، می‌خواستی سر صحبت رو باز کنی، منم کوتاه جواب می‌دادم که خسته شی، ولی انگار نه انگار 😂",
  "بازی‌های جالبی ساخته بودی، اون لحظه من برگام ریخته بود! یادته بازی کشوری بود بازی می‌کردیم، بعد خودت هم یکی شبیه اون ساختی؟\n\nخیلی سخت بود، مغزم گوزیده بود اصلاً 😂 ماهی ۲۰ میلیارد بود؟ چقدر بود؟ هر سری می‌گفتم، اضافه می‌شد! مغزم هنگ کرده بود (حالا بماند که هنگ نیست اصلاً 😂)\n\nباید سرباز می‌گرفتی، ساختمون می‌ساختیم. واقعاً خیلی سخت بود ولی خاطره باحالی بود...",
  "تازه‌شم هنوز اون سام بادی گیومی رو دارما 😂\n\nگلوت گرفته بود، بهونه می‌آوردی میمون!\n\nدیگه زیاد چیزی یادم نیست، به کوچیکی خودت منو ببخش 😂"
 ];
+
 const PRESENT = [
  "خب این چند روز کم‌پیدا شدی، دمت گرم 😂 خیلی سرت شلوغه، ولی این سایت جدیدی هم که درست کردی خیلی خوب شده بود. دمت گرم، اصلاً هر بار ذوق کردم!",
  "با اینکه سرت شلوغه، ولی رفاقتمون عوض نشده، پایداره و باید هم بمونه 😂🔪",
  "این سایت هم کامبکم بود، حال کن 🥸"
 ];
+
 const FUTURE = [
  ["کپسول ۰۰۱ — هدف‌ها","قراره هر دومون به هدف‌هامون برسیم، حتی اگه مسیرش سخت و طولانی باشه. یه روز به عقب نگاه می‌کنیم و می‌بینیم چقدر جلو اومدیم."],
  ["کپسول ۰۰۲ — آینده","امیدوارم چند سال دیگه هنوز با هم در ارتباط باشیم و کلی خاطره‌ی جدید برای تعریف کردن داشته باشیم."],
  ["کپسول ۰۰۳ — قرار آینده","یه روز باید برگردیم این سایت رو دوباره باز کنیم و ببینیم چقدر از چیزایی که الان آرزوشون رو داریم واقعی شدن. البته امیدوارم اون موقع هنوز رو مخ هم باشیم 😂"]
 ];
+
 const QUIZ = [
  {q:"کدام شیرینی مورد علاقه منه؟",o:["شیرینی نارنجکی","شیرینی زبونی","شیرینی خامه‌ای","رولت","همشون"],a:4},
  {q:"اسم گربه‌م چیه؟",o:["ملوس","پشمک","لورد","منگول"],a:0},
@@ -208,6 +305,7 @@ const QUIZ = [
  {q:"اولین چیزی که صبح بعد بیدار شدن چک می‌کنم چیه؟",o:["گوشی","ساعت دیواری","وضعیت هوا","آینه"],a:0},
  {q:"منگل خان چه چیپسی رو بیشتر دوست داره؟",o:["چیپس سرکه‌ای","چیپس قارچ و پنیر","چیپس پیاز جعفری","چیپس فلفل سیاه"],a:1}
 ];
+
 const EVENTS = [
  {title:"خواب ترسناک",slides:[
   "یه شب خواب دیدم خونه مادربزرگ هستیم. همه‌جا تاریک بود و برق قطع شده بود. ساعت ۱۲:۱۱ بود و فضا عجیب و ساکت به نظر می‌رسید.",
@@ -216,274 +314,763 @@ const EVENTS = [
  ]},
  {title:"چی تو ذهنمه",slides:[""]},
  {title:"خاطره خنده‌دار",slides:["یادش بخیر تو مدرسه انگشتت می‌کردن 🤣🤣 فکر کنم هنوزم ازش درس نگرفتی"]},
- {title:"حقیقتی درباره رفاقتمون",slides:["می‌خواستم یه حقیقتی رو بگم... من گِیم.","شوخی کردم اوکی؟ 😂\n\nولی خب خیلی گاوی، بیش از حد گاوی! اسکل‌تر از تو ندیدم. احمق‌ترین کسی هستی که تو عمرم دیدم!\n\n(همیشه که نباید تعریف کنم 🥸)"]},
- {title:"اعتراف محرمانه",slides:["یه چیزی هست که تا حالا بهت نگفتم ولی نمی‌شه یه راز باقی بمونه\n\nI'm a boy.","می‌خواستم یکم کرم‌ریزی کنم 😶"]}
+ {title:"حقیقتی درباره رفاقتمون",slides:[
+  "می‌خواستم یه حقیقتی رو بگم... من گِیم.",
+  "شوخی کردم اوکی؟ 😂\n\nولی خب خیلی گاوی، بیش از حد گاوی! اسکل‌تر از تو ندیدم. احمق‌ترین کسی هستی که تو عمرم دیدم!\n\n(همیشه که نباید تعریف کنم 🥸)"
+ ]},
+ {title:"اعتراف محرمانه",slides:[
+  "یه چیزی هست که تا حالا بهت نگفتم ولی نمی‌شه یه راز باقی بمونه\n\nI'm a boy.",
+  "می‌خواستم یکم کرم‌ریزی کنم 😶"
+ ]}
 ];
+
 const LAST_MESSAGE = "شاید توی این سایت بیشتر مسخره‌بازی و تیکه انداختن دیده باشی، ولی پشت همه‌شون یه چیز واقعی هست.\n\nخوشحالم که باهات آشنا شدم و امیدوارم سال‌های بعد هم هنوز توی زندگی هم باشیم و کلی خاطره جدید بسازیم.\n\nالبته امیدوارم تا اون موقع یکم آدم شده باشی، چون واقعاً تحملت سخته 😂\n\nولی جدا از شوخی، ممنون که هستی. امیدوارم هیچ‌وقت رفاقتمون تموم نشه. 💜";
 
 const defaultState = () => ({
- screen:"welcome", aiMessages:[], aiClueFound:false, aiOrigin:"main",
- timeDest:"past", timeIndex:0, openedCapsules:[],
- secretUnlocked:false, secretReturn:"guess", signalVerified:false,
- quizIndex:0, quizAnswers:[], randomSeen:[], randomEventIndex:null, randomSlide:0,
- lastOpened:false, mindAnswer:null, started:false
+ screen:"welcome",
+ aiMessages:[],
+ aiClueFound:false,
+ aiOrigin:"main",
+ timeDest:"past",
+ timeIndex:0,
+ openedCapsules:[],
+ secretUnlocked:false,
+ signalVerified:false,
+ quizIndex:0,
+ quizAnswers:[],
+ randomSeen:[],
+ randomEventIndex:null,
+ randomSlide:0,
+ lastOpened:false,
+ mindAnswer:null,
+ started:false
 });
+
 let state = loadState();
+
 function loadState(){
  try{
   const raw=localStorage.getItem(STORAGE_KEY);
-  if(!raw) return defaultState();
+  if(!raw)return defaultState();
   const saved=JSON.parse(raw);
   return {...defaultState(),...saved};
- }catch(e){return defaultState();}
+ }catch(e){
+  return defaultState();
+ }
 }
-function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){}}
-function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+
+function save(){
+ try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}
+ catch(e){}
+}
+
+function esc(s){
+ return String(s).replace(/[&<>"']/g,c=>({
+  "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+ }[c]));
+}
+
 const main=document.getElementById("main");
-function setScreen(screen){state.screen=screen;save();render();}
-function button(label,fn,cls="btn"){return `<button type="button" class="${cls}" data-action="${fn}">${label}</button>`;}
-function panel(content,extra=""){return `<section class="panel ${extra}">${content}</section>`;}
-function progress(){return `<div class="progress"><span style="width:${Math.min(100,(state.randomSeen.length/5)*100)}%"></span></div>`;}
+const music=document.getElementById("backgroundMusic");
+const musicBtn=document.getElementById("musicBtn");
+
+function setScreen(screen){
+ state.screen=screen;
+ save();
+ render();
+}
+
+function button(label,fn,cls="btn"){
+ return `<button type="button" class="${cls}" data-action="${fn}">${label}</button>`;
+}
+
+function panel(content,extra=""){
+ return `<section class="panel ${extra}">${content}</section>`;
+}
+
+function progress(){
+ return `<div class="progress"><span style="width:${Math.min(100,(state.randomSeen.length/5)*100)}%"></span></div>`;
+}
+
 function render(){
  document.body.classList.toggle("last-mode",state.screen==="last"&&state.lastOpened);
+
  const views={
-  welcome:renderWelcome,journey:renderJourney,ai:renderAI,time:renderTime,
-  secret:renderSecret,file:renderFile,signal:renderSignal,restricted:renderRestricted,
-  quiz:renderQuiz,random:renderRandom,event:renderEvent,last:renderLast
+  welcome:renderWelcome,
+  journey:renderJourney,
+  ai:renderAI,
+  time:renderTime,
+  secret:renderSecret,
+  file:renderFile,
+  signal:renderSignal,
+  restricted:renderRestricted,
+  quiz:renderQuiz,
+  random:renderRandom,
+  event:renderEvent,
+  last:renderLast
  };
+
  main.innerHTML=(views[state.screen]||renderWelcome)();
  bindActions();
  window.scrollTo({top:0,behavior:"smooth"});
 }
-function renderWelcome(){return `<div class="screen center">${panel(`
- <div class="kicker">A LITTLE WORLD OF MEMORIES</div>
- <h1>OUR STORY</h1><h3>داستان ما</h3>
- <p class="muted"><i>Every story has a beginning...</i></p>
- <p>هر داستانی یک شروع دارد...</p>
- <div class="actions">${button("START — شروع","journey")}</div>
- `,"center")}</div>`;}
-function renderJourney(){return `<div class="screen center">${panel(`
- <div class="kicker">CHAPTER 02</div><h2>A NEW JOURNEY</h2><p class="muted">یک ماجراجویی جدید</p>
- <div class="divider"></div><p>آماده‌ای داستانمون رو کشف کنی؟</p>
- <div class="actions">${button("LET'S GO — بزن بریم","aiMain")}</div>
- `,"center")}</div>`;}
+
+function renderWelcome(){
+ return `<div class="screen center">${panel(`
+  <div class="kicker">A LITTLE WORLD OF MEMORIES</div>
+  <h1>OUR STORY</h1><h3>داستان ما</h3>
+  <p class="muted"><i>Every story has a beginning...</i></p>
+  <p>هر داستانی یک شروع دارد...</p>
+  <div class="actions">${button("START — شروع","journey")}</div>
+ `,"center")}</div>`;
+}
+
+function renderJourney(){
+ return `<div class="screen center">${panel(`
+  <div class="kicker">CHAPTER 02</div><h2>A NEW JOURNEY</h2>
+  <p class="muted">یک ماجراجویی جدید</p>
+  <div class="divider"></div>
+  <p>آماده‌ای داستانمون رو کشف کنی؟</p>
+  <div class="actions">${button("LET'S GO — بزن بریم","aiMain")}</div>
+ `,"center")}</div>`;
+}
+
 function renderAI(){
- const qlist=QUESTIONS.map((q,i)=>`<button class="question-item" type="button" data-q="${i}"><b>${i+1}.</b>${esc(q[0])}</button>`).join("");
- const msgs=state.aiMessages.map(m=>`<div class="bubble ${m.type}"><span class="who">${m.type==="question"?"دنیل":"نازنین"}</span>${esc(m.text)}</div>`).join("");
+ const qlist=QUESTIONS.map((q,i)=>
+  `<button class="question-item" type="button" data-q="${i}">
+   <b>${i+1}.</b>${esc(q[0])}
+  </button>`
+ ).join("");
+
+ const msgs=state.aiMessages.map(m=>
+  `<div class="bubble ${m.type}">
+   <span class="who">${m.type==="question"?"دنیل":"نازنین"}</span>${esc(m.text)}
+  </div>`
+ ).join("");
+
  return `<div class="screen">${panel(`
- <div class="kicker">CHAPTER 03</div><h2>THE AI</h2><p class="muted">یک گفت‌وگوی کوچک با جواب‌های از پیش آماده</p>
- <button class="small-btn mobile-question-toggle" type="button" data-action="toggleQuestions">☰ فهرست ۱۰ سؤال</button>
- <div class="ai-layout" style="margin-top:14px">
-  <aside class="question-sidebar" id="questionSidebar"><h3>سؤال‌های آماده</h3><div class="question-list">${qlist}</div></aside>
-  <section class="chat-panel">
-   <div class="chat-head"><strong>Chat</strong><span class="tag">ONLINE</span></div>
-   <div class="chat-log" id="chatLog">${msgs||'<p class="muted center">یک سؤال از فهرست سمت چپ انتخاب کن یا پیام دلخواهت رو بنویس.</p>'}</div>
-   <div class="chat-compose"><input id="chatInput" type="text" maxlength="500" placeholder="پیامت رو بنویس..."><button class="btn" type="button" data-action="sendChat">ارسال</button></div>
-   <div class="chat-hint">سؤال آماده بعد از انتخاب، فقط وارد کادر می‌شود و خودکار ارسال نمی‌شود.</div>
-   <div class="hidden-clue" role="button" tabindex="0" data-action="findClue" aria-label="پیام مخفی">بالاخره پیداش کردی... حواست بیشتر به جزئیات باشه 👾</div>
-   ${state.aiClueFound?'<p class="feedback">پیام مخفی پیدا شد.</p>':''}
-  </section>
- </div>
- <div class="actions">
- ${state.aiOrigin==="signal"?(state.aiClueFound?button("رفتن به سیگنال ناشناس","signal"):'<p class="muted">برای بازگشت به سیگنال، اول پیام مخفی پایین صفحه را پیدا کن.</p>'):button("ادامه به ماشین زمان","time")}
- </div>
+  <div class="kicker">CHAPTER 03</div>
+  <h2>THE AI</h2>
+  <p class="muted">یک گفت‌وگوی کوچک با جواب‌های از پیش آماده</p>
+
+  <button class="small-btn mobile-question-toggle" type="button" data-action="toggleQuestions">☰ فهرست ۱۰ سؤال</button>
+
+  <div class="ai-layout" style="margin-top:14px">
+   <aside class="question-sidebar" id="questionSidebar">
+    <h3>سؤال‌های آماده</h3>
+    <div class="question-list">${qlist}</div>
+   </aside>
+
+   <section class="chat-panel">
+    <div class="chat-head"><strong>Chat</strong><span class="tag">ONLINE</span></div>
+    <div class="chat-log" id="chatLog">
+     ${msgs||'<p class="muted center">یک سؤال از فهرست سمت چپ انتخاب کن یا پیام دلخواهت رو بنویس.</p>'}
+    </div>
+    <div class="chat-compose">
+     <input id="chatInput" type="text" maxlength="500" placeholder="پیامت رو بنویس...">
+     <button class="btn" type="button" data-action="sendChat">ارسال</button>
+    </div>
+    <div class="chat-hint">سؤال آماده بعد از انتخاب، فقط وارد کادر می‌شود و خودکار ارسال نمی‌شود.</div>
+    <div class="hidden-clue" role="button" tabindex="0" data-action="findClue" aria-label="پیام مخفی">
+     بالاخره پیداش کردی... حواست بیشتر به جزئیات باشه 👾
+    </div>
+    ${state.aiClueFound?'<p class="feedback">پیام مخفی پیدا شد.</p>':''}
+   </section>
+  </div>
+
+  <div class="actions">
+   ${state.aiOrigin==="signal"
+    ?(state.aiClueFound?button("رفتن به سیگنال ناشناس","signal"):'<p class="muted">برای بازگشت به سیگنال، اول پیام مخفی پایین صفحه را پیدا کن.</p>')
+    :button("ادامه به ماشین زمان","time")}
+  </div>
  `)}</div>`;
 }
+
 function renderTime(){
  let content="";
+
  if(state.timeDest==="past"||state.timeDest==="present"){
   const arr=state.timeDest==="past"?PAST:PRESENT;
   const title=state.timeDest==="past"?"PAST — گذشته":"PRESENT — حال";
-  content=`<div class="kicker">${title}</div><h3>FILE 00${state.timeIndex+1}</h3><div class="slide-box"><p class="story-text">${esc(arr[state.timeIndex])}</p></div>
-  <div class="nav-row">${button("اسلاید قبل","timePrev","nav-btn")}${button("اسلاید بعد","timeNext","nav-btn")}</div>`;
+
+  content=`
+   <div class="kicker">${title}</div>
+   <h3>FILE 00${state.timeIndex+1}</h3>
+   <div class="slide-box"><p class="story-text">${esc(arr[state.timeIndex])}</p></div>
+   <div class="nav-row">
+    ${button("اسلاید قبل","timePrev","nav-btn")}
+    ${button("اسلاید بعد","timeNext","nav-btn")}
+   </div>
+  `;
  }else{
-  content=`<div class="kicker">FUTURE — آینده</div><h3>کپسول‌های مهروموم‌شده</h3><div class="card-grid">${FUTURE.map((c,i)=>`<button type="button" class="capsule ${state.openedCapsules.includes(i)?"open":""}" data-capsule="${i}"><strong>${state.openedCapsules.includes(i)?"✓ ":"🔒 "}${esc(c[0])}</strong><span>${state.openedCapsules.includes(i)?"باز شده":"برای باز کردن لمس کن"}</span></button>`).join("")}</div>${state.openedCapsules.length?`<div class="story-text">${state.openedCapsules.map(i=>`<p><b>${esc(FUTURE[i][0])}</b><br>${esc(FUTURE[i][1])}</p>`).join("")}</div>`:""}`;
+  content=`
+   <div class="kicker">FUTURE — آینده</div>
+   <h3>کپسول‌های مهروموم‌شده</h3>
+   <div class="card-grid">
+    ${FUTURE.map((c,i)=>`
+     <button type="button" class="capsule ${state.openedCapsules.includes(i)?"open":""}" data-capsule="${i}">
+      <strong>${state.openedCapsules.includes(i)?"✓ ":"🔒 "}${esc(c[0])}</strong>
+      <span>${state.openedCapsules.includes(i)?"باز شده":"برای باز کردن لمس کن"}</span>
+     </button>
+    `).join("")}
+   </div>
+   ${state.openedCapsules.length?`
+    <div class="story-text">
+     ${state.openedCapsules.map(i=>`<p><b>${esc(FUTURE[i][0])}</b><br>${esc(FUTURE[i][1])}</p>`).join("")}
+    </div>
+   `:""}
+  `;
  }
- return `<div class="screen">${panel(`<div class="kicker">CHAPTER 04</div><h2>TIME MACHINE</h2>
- <div class="clock"><div class="clock-label">TIME</div><div class="hand" style="transform:rotate(${state.timeDest==="past"?-90:state.timeDest==="present"?0:90}deg)"></div></div>
- <div class="card-grid">
- <button class="tile" data-dest="past"><strong>PAST</strong><span>گذشته</span></button>
- <button class="tile" data-dest="present"><strong>PRESENT</strong><span>حال</span></button>
- <button class="tile" data-dest="future"><strong>FUTURE</strong><span>آینده</span></button>
- </div><div class="divider"></div>${content}
- <div class="actions">${button("رفتن به اتاق مخفی","secret")}</div>
+
+ return `<div class="screen">${panel(`
+  <div class="kicker">CHAPTER 04</div>
+  <h2>TIME MACHINE</h2>
+  <div class="clock">
+   <div class="clock-label">TIME</div>
+   <div class="hand" style="transform:rotate(${state.timeDest==="past"?-90:state.timeDest==="present"?0:90}deg)"></div>
+  </div>
+
+  <div class="card-grid">
+   <button class="tile" data-dest="past"><strong>PAST</strong><span>گذشته</span></button>
+   <button class="tile" data-dest="present"><strong>PRESENT</strong><span>حال</span></button>
+   <button class="tile" data-dest="future"><strong>FUTURE</strong><span>آینده</span></button>
+  </div>
+
+  <div class="divider"></div>
+  ${content}
+  <div class="actions">${button("رفتن به اتاق مخفی","secret")}</div>
  `)}</div>`;
 }
+
 function renderSecret(){
- return `<div class="screen center">${panel(`<div class="kicker">CHAPTER 05</div><h2>SECRET ROOM</h2>
- <div style="font-size:44px;margin:10px">🔒</div>
- <p>این صفحه قفله! رمز رو وارد کن</p><h3>تو کی هستی؟</h3>
- <div class="lock-box"><input id="secretInput" type="text" autocomplete="off" placeholder="رمز را وارد کن...">
- <div class="feedback error" id="secretFeedback"></div>
- <div class="actions">${button("UNLOCK — باز کردن قفل","unlock")}${button("رمز رو نمی‌دونم","skipSecret","btn secondary")}</div></div>
+ return `<div class="screen center">${panel(`
+  <div class="kicker">CHAPTER 05</div>
+  <h2>SECRET ROOM</h2>
+  <div style="font-size:44px;margin:10px">🔒</div>
+  <p>این صفحه قفله! رمز رو وارد کن</p>
+  <h3>تو کی هستی؟</h3>
+  <div class="lock-box">
+   <input id="secretInput" type="text" autocomplete="off" placeholder="رمز را وارد کن...">
+   <div class="feedback error" id="secretFeedback"></div>
+   <div class="actions">
+    ${button("UNLOCK — باز کردن قفل","unlock")}
+    ${button("رمز رو نمی‌دونم","skipSecret","btn secondary")}
+   </div>
+  </div>
  `,"center")}</div>`;
 }
-function renderFile(){return `<div class="screen center">${panel(`<div class="kicker">FILE 001</div><h2>پرونده ۰۰۱</h2><p>این جمله برای کیست؟</p><h3>«خواهیم دید چه میشود»</h3>
- <div class="option-list">${["ترامپ","نازنین","جمهوری اسلامی","عمو جانی"].map((x,i)=>`<button class="choice" data-file="${i}">${i+1}. ${x}</button>`).join("")}</div>
- <div class="feedback" id="fileFeedback"></div>
- <div class="actions">${button("بازگشت به اتاق مخفی","secret","btn secondary")}</div>
- `,"center")}</div>`;}
+
+function renderFile(){
+ return `<div class="screen center">${panel(`
+  <div class="kicker">FILE 001</div>
+  <h2>پرونده ۰۰۱</h2>
+  <p>این جمله برای کیست؟</p>
+  <h3>«خواهیم دید چه میشود»</h3>
+  <div class="option-list">
+   ${["ترامپ","نازنین","جمهوری اسلامی","عمو جانی"].map((x,i)=>
+    `<button class="choice" data-file="${i}">${i+1}. ${x}</button>`
+   ).join("")}
+  </div>
+  <div class="feedback" id="fileFeedback"></div>
+  <div class="actions">${button("بازگشت به اتاق مخفی","secret","btn secondary")}</div>
+ `,"center")}</div>`;
+}
+
 function renderSignal(){
- if(state.signalVerified)return `<div class="screen center">${panel(`<div class="kicker">UNKNOWN SIGNAL</div><h2>تأیید شد ✓</h2><p>سیگنال با موفقیت تأیید شد.</p><div class="actions">${button("رفتن به مرحله بعد","restricted")}</div>`,"center")}</div>`;
- return `<div class="screen center">${panel(`<div class="kicker">UNKNOWN SIGNAL</div><h2>سیگنال ناشناس</h2>
- <div class="random-stage"><p style="direction:ltr;font-family:monospace">&gt; سیگنال ناشناس دریافت شد...<br>&gt; در حال رمزگشایی...</p>
- <div class="divider"></div><p>بالاخره پیدات شد!<br>فکر کردی فقط با دونستن رمز می‌تونی همه‌چیز رو کشف کنی؟ 😂<br>هنوز یه چیز هست که باید بفهمی...</p></div>
- <div class="actions">${button("رفتن به هوش مصنوعی","aiSignal")}${button("بازگشت","secret","btn secondary")}</div>
+ if(state.signalVerified){
+  return `<div class="screen center">${panel(`
+   <div class="kicker">UNKNOWN SIGNAL</div>
+   <h2>تأیید شد ✓</h2>
+   <p>سیگنال با موفقیت تأیید شد.</p>
+   <div class="actions">${button("رفتن به مرحله بعد","restricted")}</div>
+  `,"center")}</div>`;
+ }
+
+ return `<div class="screen center">${panel(`
+  <div class="kicker">UNKNOWN SIGNAL</div>
+  <h2>سیگنال ناشناس</h2>
+  <div class="random-stage">
+   <p style="direction:ltr;font-family:monospace">
+    &gt; سیگنال ناشناس دریافت شد...<br>
+    &gt; در حال رمزگشایی...
+   </p>
+   <div class="divider"></div>
+   <p>بالاخره پیدات شد!<br>
+   فکر کردی فقط با دونستن رمز می‌تونی همه‌چیز رو کشف کنی؟ 😂<br>
+   هنوز یه چیز هست که باید بفهمی...</p>
+  </div>
+  <div class="actions">
+   ${button("رفتن به هوش مصنوعی","aiSignal")}
+   ${button("بازگشت","secret","btn secondary")}
+  </div>
  `,"center")}</div>`;
 }
-function renderRestricted(){return `<div class="screen center">${panel(`<div class="kicker">RESTRICTED AREA</div><h2>منطقه ممنوعه</h2>
- <div class="random-stage"><p>بالاخره تا اینجا هم اومدی؟</p>
- <p>بعضی چیزا بهتره همین‌جا مخفی بمونن... ولی خب تو که تا اینجا اومدی، حیفه دست خالی برگردی!</p>
- <h3>ACCESS DENIED?</h3><p>شوخی کردم 😂 هنوز یه مرحله دیگه مونده.</p></div>
- <div class="actions">${button("NEXT","quiz")}</div>
- `,"center")}</div>`;}
+
+function renderRestricted(){
+ return `<div class="screen center">${panel(`
+  <div class="kicker">RESTRICTED AREA</div>
+  <h2>منطقه ممنوعه</h2>
+  <div class="random-stage">
+   <p>بالاخره تا اینجا هم اومدی؟</p>
+   <p>بعضی چیزا بهتره همین‌جا مخفی بمونن... ولی خب تو که تا اینجا اومدی، حیفه دست خالی برگردی!</p>
+   <h3>ACCESS DENIED?</h3>
+   <p>شوخی کردم 😂 هنوز یه مرحله دیگه مونده.</p>
+  </div>
+  <div class="actions">${button("NEXT","quiz")}</div>
+ `,"center")}</div>`;
+}
+
 function renderQuiz(){
- const item=QUIZ[state.quizIndex], answered=state.quizAnswers[state.quizIndex]===item.a;
- return `<div class="screen center">${panel(`<div class="kicker">CHAPTER 06</div><h2>GUESS WHAT'S ON MY MIND</h2>
- <p class="quiz-progress">سؤال ${state.quizIndex+1} از ۵</p>${progress()}
- <h3>${esc(item.q)}</h3>
- <div class="option-list">${item.o.map((o,i)=>`<button class="choice ${answered&&i===item.a?"correct":""}" data-quiz="${i}" ${answered?"disabled":""}>${i+1}. ${esc(o)}</button>`).join("")}</div>
- <div class="feedback" id="quizFeedback">${answered?(state.quizIndex===4?"آفرین منگل خان 😂":"درسته! آفرین 😂"):""}</div>
- <div class="actions">${answered?button(state.quizIndex===4?"رفتن به اتفاقات تصادفی":"سؤال بعدی",state.quizIndex===4?"random":"quizNext"):""}</div>
+ const item=QUIZ[state.quizIndex];
+ const answered=state.quizAnswers[state.quizIndex]===item.a;
+
+ return `<div class="screen center">${panel(`
+  <div class="kicker">CHAPTER 06</div>
+  <h2>GUESS WHAT'S ON MY MIND</h2>
+  <p class="quiz-progress">سؤال ${state.quizIndex+1} از ۵</p>
+  ${progress()}
+  <h3>${esc(item.q)}</h3>
+  <div class="option-list">
+   ${item.o.map((o,i)=>`
+    <button class="choice ${answered&&i===item.a?"correct":""}" data-quiz="${i}" ${answered?"disabled":""}>
+     ${i+1}. ${esc(o)}
+    </button>
+   `).join("")}
+  </div>
+  <div class="feedback" id="quizFeedback">
+   ${answered?(state.quizIndex===4?"آفرین منگل خان 😂":"درسته! آفرین 😂"):""}
+  </div>
+  <div class="actions">
+   ${answered?button(state.quizIndex===4?"رفتن به اتفاقات تصادفی":"سؤال بعدی",state.quizIndex===4?"random":"quizNext"):""}
+  </div>
  `,"center")}</div>`;
 }
+
 function renderRandom(){
  const left=EVENTS.map((e,i)=>!state.randomSeen.includes(i)?e.title:null).filter(Boolean);
- return `<div class="screen center">${panel(`<div class="kicker">CHAPTER 07</div><h2>RANDOM EVENT</h2>
- <div class="random-stage"><p>اتفاق بعدی رو شانسی کشف کن!</p><div class="random-wheel" id="randomWheel">?</div>
- <p class="muted">اتفاق‌های باقی‌مانده: ${5-state.randomSeen.length} از ۵</p>
- ${progress()}
- ${state.randomSeen.length===5?'<h3>همه اتفاق‌ها رو دیدی!</h3>':''}
- <div class="actions">${state.randomSeen.length===5?button("ادامه به پیام آخر","last"):button("شروع","spinRandom")}</div></div>
- <div class="divider"></div><p class="muted">اتفاق‌های باقی‌مانده</p><div class="card-grid">${left.length?left.map(t=>`<div class="tile">${esc(t)}</div>`).join(""):'<div class="tile">همه اتفاق‌ها نمایش داده شدند ✓</div>'}</div>
+
+ return `<div class="screen center">${panel(`
+  <div class="kicker">CHAPTER 07</div>
+  <h2>RANDOM EVENT</h2>
+  <div class="random-stage">
+   <p>اتفاق بعدی رو شانسی کشف کن!</p>
+   <div class="random-wheel" id="randomWheel">?</div>
+   <p class="muted">اتفاق‌های باقی‌مانده: ${5-state.randomSeen.length} از ۵</p>
+   ${progress()}
+   ${state.randomSeen.length===5?'<h3>همه اتفاق‌ها رو دیدی!</h3>':''}
+   <div class="actions">
+    ${state.randomSeen.length===5?button("ادامه به پیام آخر","last"):button("شروع","spinRandom")}
+   </div>
+  </div>
+  <div class="divider"></div>
+  <p class="muted">اتفاق‌های باقی‌مانده</p>
+  <div class="card-grid">
+   ${left.length?left.map(t=>`<div class="tile">${esc(t)}</div>`).join(""):'<div class="tile">همه اتفاق‌ها نمایش داده شدند ✓</div>'}
+  </div>
  `,"center")}</div>`;
 }
+
 function renderEvent(){
  const ev=EVENTS[state.randomEventIndex];
+ if(!ev)return renderRandom();
+
  const slide=ev.slides[state.randomSlide]||"";
  const isMind=state.randomEventIndex===1;
- return `<div class="screen center">${panel(`<div class="kicker">RANDOM EVENT · ${state.randomEventIndex+1}/5</div><h2>${esc(ev.title)}</h2>
- ${isMind?`<div class="random-stage"><div class="mind-question"><h3>سؤال: از سایت خوشت اومده؟</h3>
- <div class="mind-options"><button class="mind-choice" data-mind="no" ${state.mindAnswer!==null?"disabled":""}>۱. نه</button><button class="mind-choice" data-mind="yes" ${state.mindAnswer!==null?"disabled":""}>۲. آره</button></div>
- <div class="mind-feedback ${state.mindAnswer==="no"?"error":""}" id="mindFeedback">${state.mindAnswer==="no"?"اشتباه زدی":state.mindAnswer==="yes"?"آفرین! درست گفتی 😂":""}</div></div></div>`:
- `<div class="random-stage"><div class="slide-box">${slide?`<p class="story-text">${esc(slide)}</p>`:''}</div></div>`}
- ${ev.slides.length>1?`<div class="nav-row">${button("اسلاید قبل","eventPrev","nav-btn")}${button("اسلاید بعد","eventNext","nav-btn")}</div>`:""}
- <div class="actions">${button("ادامه","random")}</div>
+
+ return `<div class="screen center">${panel(`
+  <div class="kicker">RANDOM EVENT · ${state.randomEventIndex+1}/5</div>
+  <h2>${esc(ev.title)}</h2>
+
+  ${isMind?`
+   <div class="random-stage">
+    <div class="mind-question">
+     <h3>سؤال: از سایت خوشت اومده؟</h3>
+     <div class="mind-options">
+      <button class="mind-choice" data-mind="no" ${state.mindAnswer!==null?"disabled":""}>۱. نه</button>
+      <button class="mind-choice" data-mind="yes" ${state.mindAnswer!==null?"disabled":""}>۲. آره</button>
+     </div>
+     <div class="mind-feedback ${state.mindAnswer==="no"?"error":""}" id="mindFeedback">
+      ${state.mindAnswer==="no"?"اشتباه زدی":state.mindAnswer==="yes"?"آفرین! درست گفتی 😂":""}
+     </div>
+    </div>
+   </div>
+  `:`
+   <div class="random-stage">
+    <div class="slide-box">
+     ${slide?`<p class="story-text">${esc(slide)}</p>`:""}
+    </div>
+   </div>
+  `}
+
+  ${ev.slides.length>1?`
+   <div class="nav-row">
+    ${button("اسلاید قبل","eventPrev","nav-btn")}
+    ${button("اسلاید بعد","eventNext","nav-btn")}
+   </div>
+  `:""}
+
+  <div class="actions">${button("ادامه","random")}</div>
  `,"center")}</div>`;
 }
-function renderLast(){return state.lastOpened?`<div class="screen last-page">
- <div class="kicker">CHAPTER 08</div><h2>THE LAST MESSAGE</h2>
- <div class="letter-window"><div class="letter-track">${esc(LAST_MESSAGE)}</div></div>
- <h2 class="last-end">THE END</h2><div class="actions">${button("START OVER — شروع از اول","restart")}</div>
- </div>`:`<div class="screen center">${panel(`<div class="kicker">CHAPTER 08</div><h2>THE LAST MESSAGE</h2>
- <p>یه نامه برای تو...</p><div class="envelope" role="button" tabindex="0" data-action="openLetter"><div class="seal">✉</div></div><p class="muted">برای باز کردن نامه روی پاکت بزن</p>
- `,"center")}</div>`;}
+
+function renderLast(){
+ if(state.lastOpened){
+  return `<div class="screen last-page">
+   <div class="kicker">CHAPTER 08</div>
+   <h2>THE LAST MESSAGE</h2>
+   <div class="letter-window"><div class="letter-track">${esc(LAST_MESSAGE)}</div></div>
+   <h2 class="last-end">THE END</h2>
+   <div class="actions">${button("START OVER — شروع از اول","restart")}</div>
+  </div>`;
+ }
+
+ return `<div class="screen center">${panel(`
+  <div class="kicker">CHAPTER 08</div>
+  <h2>THE LAST MESSAGE</h2>
+  <p>یه نامه برای تو...</p>
+  <div class="envelope" role="button" tabindex="0" data-action="openLetter">
+   <div class="seal">✉</div>
+  </div>
+  <p class="muted">برای باز کردن نامه روی پاکت بزن</p>
+ `,"center")}</div>`;
+}
 
 function bindActions(){
- document.querySelectorAll("[data-action]").forEach(el=>el.addEventListener("click",()=>handleAction(el.dataset.action)));
- document.querySelectorAll("[data-q]").forEach(el=>el.addEventListener("click",()=>selectQuestion(Number(el.dataset.q))));
- document.querySelectorAll("[data-capsule]").forEach(el=>el.addEventListener("click",()=>openCapsule(Number(el.dataset.capsule))));
- document.querySelectorAll("[data-dest]").forEach(el=>el.addEventListener("click",()=>{state.timeDest=el.dataset.dest;state.timeIndex=0;save();render();}));
- document.querySelectorAll("[data-file]").forEach(el=>el.addEventListener("click",()=>checkFile(Number(el.dataset.file))));
- document.querySelectorAll("[data-quiz]").forEach(el=>el.addEventListener("click",()=>answerQuiz(Number(el.dataset.quiz))));
- document.querySelectorAll("[data-mind]").forEach(el=>el.addEventListener("click",()=>answerMind(el.dataset.mind)));
+ document.querySelectorAll("[data-action]").forEach(el=>{
+  el.addEventListener("click",()=>handleAction(el.dataset.action));
+ });
+
+ document.querySelectorAll("[data-q]").forEach(el=>{
+  el.addEventListener("click",()=>selectQuestion(Number(el.dataset.q)));
+ });
+
+ document.querySelectorAll("[data-capsule]").forEach(el=>{
+  el.addEventListener("click",()=>openCapsule(Number(el.dataset.capsule)));
+ });
+
+ document.querySelectorAll("[data-dest]").forEach(el=>{
+  el.addEventListener("click",()=>{
+   state.timeDest=el.dataset.dest;
+   state.timeIndex=0;
+   save();
+   render();
+  });
+ });
+
+ document.querySelectorAll("[data-file]").forEach(el=>{
+  el.addEventListener("click",()=>checkFile(Number(el.dataset.file)));
+ });
+
+ document.querySelectorAll("[data-quiz]").forEach(el=>{
+  el.addEventListener("click",()=>answerQuiz(Number(el.dataset.quiz)));
+ });
+
+ document.querySelectorAll("[data-mind]").forEach(el=>{
+  el.addEventListener("click",()=>answerMind(el.dataset.mind));
+ });
+
  const clue=document.querySelector("[data-action='findClue']");
- if(clue)clue.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();findClue();}});
+ if(clue){
+  clue.addEventListener("keydown",e=>{
+   if(e.key==="Enter"||e.key===" "){
+    e.preventDefault();
+    findClue();
+   }
+  });
+ }
+
  const envelope=document.querySelector("[data-action='openLetter']");
- if(envelope)envelope.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openLetter();}});
+ if(envelope){
+  envelope.addEventListener("keydown",e=>{
+   if(e.key==="Enter"||e.key===" "){
+    e.preventDefault();
+    openLetter();
+   }
+  });
+ }
+
  const input=document.getElementById("chatInput");
- if(input)input.addEventListener("keydown",e=>{if(e.key==="Enter")sendChat();});
-}
-function handleAction(action){
- const map={journey:"journey",aiMain:()=>{state.aiOrigin="main";setScreen("ai");},time:"time",secret:"secret",file:"file",signal:returnSignal,restricted:"restricted",quiz:"quiz",random:"random",last:"last",aiSignal:()=>{state.aiOrigin="signal";setScreen("ai");},skipSecret:skipSecret,unlock:unlockSecret,toggleQuestions:toggleQuestions,sendChat:sendChat,findClue:findClue,timePrev:()=>moveTime(-1),timeNext:()=>moveTime(1),quizNext:nextQuiz,spinRandom:spinRandom,eventPrev:()=>moveEvent(-1),eventNext:()=>moveEvent(1),openLetter:openLetter,restart:restart};
- const fn=map[action];if(typeof fn==="function")fn();else if(typeof fn==="string")setScreen(fn);
-}
-function selectQuestion(i){const input=document.getElementById("chatInput");if(input){input.value=QUESTIONS[i][0];input.focus();}document.querySelectorAll(".question-item").forEach(x=>x.classList.toggle("selected",Number(x.dataset.q)===i));}
-function sendChat(){
- const input=document.getElementById("chatInput");if(!input)return;
- const text=input.value.trim();if(!text)return;
- const idx=QUESTIONS.findIndex(q=>q[0]===text);
- state.aiMessages.push({type:"question",text});
- if(idx>=0)state.aiMessages.push({type:"answer",text:QUESTIONS[idx][1]});
- save();render();
- const log=document.getElementById("chatLog");if(log)log.scrollTop=log.scrollHeight;
-}
-function findClue(){state.aiClueFound=true;save();render();}
-function returnSignal(){if(state.aiOrigin==="signal"&&state.aiClueFound){state.signalVerified=true;save();}setScreen("signal");}
-function toggleQuestions(){const el=document.getElementById("questionSidebar");if(el)el.classList.toggle("mobile-open");}
-function moveTime(d){const arr=state.timeDest==="past"?PAST:PRESENT;state.timeIndex=Math.max(0,Math.min(arr.length-1,state.timeIndex+d));save();render();}
-function openCapsule(i){if(!state.openedCapsules.includes(i))state.openedCapsules.push(i);save();render();}
-function unlockSecret(){
- const input=document.getElementById("secretInput"),feedback=document.getElementById("secretFeedback");
- if(!input)return;
- if(input.value.trim()==="من موزم"){state.secretUnlocked=true;save();setScreen("file");}
- else if(feedback)feedback.textContent="رمز اشتباهه!";
-}
-function skipSecret(){state.secretUnlocked=false;setScreen("quiz");}
-function checkFile(i){
- const feedback=document.getElementById("fileFeedback");
- if(i===1){if(feedback){feedback.textContent="درسته! آفرین 😂";feedback.classList.remove("error");}setTimeout(()=>setScreen("signal"),650);}
- else if(feedback){feedback.textContent="دوباره تلاش کن";feedback.classList.add("error");}
-}
-function answerMind(answer){
- if(state.mindAnswer!==null)return;
- if(answer==="yes"){state.mindAnswer="yes";save();render();}
- else{const f=document.getElementById("mindFeedback");if(f){f.textContent="اشتباه زدی";f.classList.add("error");}}
-}
-function answerQuiz(i){
- const item=QUIZ[state.quizIndex];
- if(i===item.a){state.quizAnswers[state.quizIndex]=i;save();render();}
- else{const f=document.getElementById("quizFeedback");if(f){f.textContent="اشتباه زدی! دوباره تلاش کن 😂";f.classList.add("error");}}
-}
-function nextQuiz(){if(state.quizIndex<4){state.quizIndex++;save();render();}}
-function spinRandom(){
- const remaining=EVENTS.map((_,i)=>i).filter(i=>!state.randomSeen.includes(i));
- if(!remaining.length){render();return;}
- const wheel=document.getElementById("randomWheel");
- if(wheel)wheel.classList.add("spinning");
- const chosen=remaining[Math.floor(Math.random()*remaining.length)];
- const btn=document.querySelector("[data-action='spinRandom']");if(btn)btn.disabled=true;
- setTimeout(()=>{state.randomEventIndex=chosen;state.randomSlide=0;state.randomSeen.push(chosen);save();setScreen("event");},3000);
-}
-function moveEvent(d){
- const ev=EVENTS[state.randomEventIndex];if(!ev)return;
- state.randomSlide=Math.max(0,Math.min(ev.slides.length-1,state.randomSlide+d));save();render();
-}
-function openLetter(){state.lastOpened=true;save();render();}
-function restart(){
- const fresh=defaultState();
- fresh.screen="welcome";
- state=fresh;save();render();
+ if(input){
+  input.addEventListener("keydown",e=>{
+   if(e.key==="Enter")sendChat();
+  });
+ }
 }
 
-const music=document.getElementById("backgroundMusic");
-const musicBtn=document.getElementById("musicBtn");
-music.volume=0.4;
-musicBtn.addEventListener("click",async()=>{
+function handleAction(action){
+ const map={
+  journey:"journey",
+  aiMain:()=>{state.aiOrigin="main";setScreen("ai");},
+  time:"time",
+  secret:"secret",
+  file:"file",
+  signal:returnSignal,
+  restricted:"restricted",
+  quiz:"quiz",
+  random:"random",
+  last:"last",
+  aiSignal:()=>{state.aiOrigin="signal";setScreen("ai");},
+  skipSecret:skipSecret,
+  unlock:unlockSecret,
+  toggleQuestions:toggleQuestions,
+  sendChat:sendChat,
+  findClue:findClue,
+  timePrev:()=>moveTime(-1),
+  timeNext:()=>moveTime(1),
+  quizNext:nextQuiz,
+  spinRandom:spinRandom,
+  eventPrev:()=>moveEvent(-1),
+  eventNext:()=>moveEvent(1),
+  openLetter:openLetter,
+  restart:restart
+ };
+
+ const fn=map[action];
+ if(typeof fn==="function")fn();
+ else if(typeof fn==="string")setScreen(fn);
+}
+
+function selectQuestion(i){
+ const input=document.getElementById("chatInput");
+ if(input&&QUESTIONS[i]){
+  input.value=QUESTIONS[i][0];
+  input.focus();
+ }
+
+ document.querySelectorAll(".question-item").forEach(x=>{
+  x.classList.toggle("selected",Number(x.dataset.q)===i);
+ });
+}
+
+function sendChat(){
+ const input=document.getElementById("chatInput");
+ if(!input)return;
+
+ const textValue=input.value.trim();
+ if(!textValue)return;
+
+ const idx=QUESTIONS.findIndex(q=>q[0]===textValue);
+
+ state.aiMessages.push({type:"question",text:textValue});
+
+ if(idx>=0){
+  state.aiMessages.push({type:"answer",text:QUESTIONS[idx][1]});
+ }
+
+ save();
+ render();
+
+ const log=document.getElementById("chatLog");
+ if(log)log.scrollTop=log.scrollHeight;
+}
+
+function findClue(){
+ if(state.aiClueFound)return;
+ state.aiClueFound=true;
+ save();
+ render();
+}
+
+function returnSignal(){
+ if(state.aiOrigin==="signal"&&state.aiClueFound){
+  state.signalVerified=true;
+  save();
+ }
+ setScreen("signal");
+}
+
+function toggleQuestions(){
+ const el=document.getElementById("questionSidebar");
+ if(el)el.classList.toggle("mobile-open");
+}
+
+function moveTime(d){
+ const arr=state.timeDest==="past"?PAST:PRESENT;
+ state.timeIndex=Math.max(0,Math.min(arr.length-1,state.timeIndex+d));
+ save();
+ render();
+}
+
+function openCapsule(i){
+ if(!state.openedCapsules.includes(i)){
+  state.openedCapsules.push(i);
+ }
+ save();
+ render();
+}
+
+function unlockSecret(){
+ const input=document.getElementById("secretInput");
+ const feedback=document.getElementById("secretFeedback");
+ if(!input)return;
+
+ if(input.value.trim()==="من موزم"){
+  state.secretUnlocked=true;
+  save();
+  setScreen("file");
+ }else if(feedback){
+  feedback.textContent="رمز اشتباهه!";
+ }
+}
+
+function skipSecret(){
+ state.secretUnlocked=false;
+ setScreen("quiz");
+}
+
+function checkFile(i){
+ const feedback=document.getElementById("fileFeedback");
+
+ if(i===1){
+  if(feedback){
+   feedback.textContent="درسته! آفرین 😂";
+   feedback.classList.remove("error");
+  }
+  setTimeout(()=>setScreen("signal"),650);
+ }else if(feedback){
+  feedback.textContent="دوباره تلاش کن";
+  feedback.classList.add("error");
+ }
+}
+
+function answerMind(answer){
+ if(state.mindAnswer!==null)return;
+
+ if(answer==="yes"){
+  state.mindAnswer="yes";
+  save();
+  render();
+ }else{
+  const f=document.getElementById("mindFeedback");
+  if(f){
+   f.textContent="اشتباه زدی";
+   f.classList.add("error");
+  }
+ }
+}
+
+function answerQuiz(i){
+ const item=QUIZ[state.quizIndex];
+ if(!item)return;
+
+ if(i===item.a){
+  state.quizAnswers[state.quizIndex]=i;
+  save();
+  render();
+ }else{
+  const f=document.getElementById("quizFeedback");
+  if(f){
+   f.textContent="اشتباه زدی! دوباره تلاش کن 😂";
+   f.classList.add("error");
+  }
+ }
+}
+
+function nextQuiz(){
+ if(state.quizIndex<QUIZ.length-1){
+  state.quizIndex++;
+  save();
+  render();
+ }
+}
+
+let spinTimer=null;
+
+function spinRandom(){
+ const remaining=EVENTS.map((_,i)=>i).filter(i=>!state.randomSeen.includes(i));
+
+ if(!remaining.length){
+  render();
+  return;
+ }
+
+ const btn=document.querySelector("[data-action='spinRandom']");
+ if(btn)btn.disabled=true;
+
+ const wheel=document.getElementById("randomWheel");
+ if(wheel)wheel.classList.add("spinning");
+
+ const chosen=remaining[Math.floor(Math.random()*remaining.length)];
+
+ clearTimeout(spinTimer);
+ spinTimer=setTimeout(()=>{
+  state.randomEventIndex=chosen;
+  state.randomSlide=0;
+  state.randomSeen.push(chosen);
+  save();
+  setScreen("event");
+ },3000);
+}
+
+function moveEvent(d){
+ const ev=EVENTS[state.randomEventIndex];
+ if(!ev)return;
+
+ state.randomSlide=Math.max(0,Math.min(ev.slides.length-1,state.randomSlide+d));
+ save();
+ render();
+}
+
+function openLetter(){
+ state.lastOpened=true;
+ save();
+ render();
+}
+
+function restart(){
+ clearTimeout(spinTimer);
+
+ const fresh=defaultState();
+ state=fresh;
+ save();
+ render();
+}
+
+/* MUSIC */
+function updateMusicButton(){
+ if(!musicBtn||!music)return;
+
+ const playing=!music.paused;
+ musicBtn.textContent=playing?"♫ MUSIC ON":"♫ MUSIC OFF";
+ musicBtn.setAttribute("aria-pressed",String(playing));
+}
+
+async function toggleMusic(){
+ if(!music)return;
+
  if(music.paused){
   try{
    await music.play();
-   musicBtn.textContent="♫ MUSIC ON";
-   musicBtn.setAttribute("aria-pressed","true");
+   updateMusicButton();
   }catch(error){
-   musicBtn.textContent="♫ MUSIC OFF";
+   musicBtn.textContent="♫ TRY AGAIN";
    musicBtn.setAttribute("aria-pressed","false");
-   alert("پخش آهنگ انجام نشد. فایل آهنگ رو بررسی کن.");
   }
  }else{
   music.pause();
-  musicBtn.textContent="♫ MUSIC OFF";
-  musicBtn.setAttribute("aria-pressed","false");
+  updateMusicButton();
  }
-});
-music.addEventListener("error",()=>{
- musicBtn.textContent="♫ MUSIC OFF";
- musicBtn.setAttribute("aria-pressed","false");
+}
+
+musicBtn.addEventListener("click",toggleMusic);
+music.addEventListener("play",updateMusicButton);
+music.addEventListener("pause",updateMusicButton);
+music.addEventListener("ended",updateMusicButton);
+
+/* TOP BUTTONS */
+document.getElementById("homeBtn").addEventListener("click",()=>{
+ setScreen("welcome");
 });
 
-document.getElementById("homeBtn").addEventListener("click",()=>{setScreen("welcome");});
-document.getElementById("resetBtn").addEventListener("click",()=>{if(confirm("پیشرفت این دور پاک شود و سایت از اول شروع شود؟"))restart();});
+document.getElementById("resetBtn").addEventListener("click",()=>{
+ if(confirm("پیشرفت این دور پاک شود و سایت از اول شروع شود؟")){
+  restart();
+ }
+});
+
 render();
+updateMusicButton();
+
 </script>
 </body>
 </html>
