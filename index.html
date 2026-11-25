@@ -23,7 +23,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
 #app{min-height:100vh;display:flex;flex-direction:column}
 .topbar{width:min(1100px,100%);margin:auto;padding:14px 18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brand{font-weight:900;letter-spacing:3px;color:#e9d9ff;font-size:14px}
-.top-actions{display:flex;gap:8px}
+.top-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .small-btn,.btn,.choice,.nav-btn{border:1px solid var(--line);color:var(--text);background:#ffffff0b;border-radius:14px;padding:10px 16px;transition:.2s}
 .small-btn{font-size:12px;padding:7px 11px}
 .small-btn:hover,.btn:hover,.choice:hover,.nav-btn:hover{transform:translateY(-2px);border-color:#c9a8ff88;background:#b78cff18}
@@ -162,8 +162,12 @@ body.last-mode .footer{color:#c8bdd8}
     <div class="top-actions">
       <button class="small-btn" id="homeBtn" type="button">صفحه اصلی</button>
       <button class="small-btn" id="resetBtn" type="button">شروع مجدد</button>
+      <button class="small-btn" id="musicBtn" type="button" aria-pressed="false">♫ MUSIC OFF</button>
     </div>
   </header>
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="omid_jahan_hele_dan%20dan%20128%20(1)%20(1).mp3" type="audio/mpeg">
+  </audio>
   <main id="main"></main>
   <footer class="footer">OUR STORY · made with memories</footer>
 </div>
@@ -452,6 +456,32 @@ function restart(){
  fresh.screen="welcome";
  state=fresh;save();render();
 }
+
+const music=document.getElementById("backgroundMusic");
+const musicBtn=document.getElementById("musicBtn");
+music.volume=0.4;
+musicBtn.addEventListener("click",async()=>{
+ if(music.paused){
+  try{
+   await music.play();
+   musicBtn.textContent="♫ MUSIC ON";
+   musicBtn.setAttribute("aria-pressed","true");
+  }catch(error){
+   musicBtn.textContent="♫ MUSIC OFF";
+   musicBtn.setAttribute("aria-pressed","false");
+   alert("پخش آهنگ انجام نشد. فایل آهنگ رو بررسی کن.");
+  }
+ }else{
+  music.pause();
+  musicBtn.textContent="♫ MUSIC OFF";
+  musicBtn.setAttribute("aria-pressed","false");
+ }
+});
+music.addEventListener("error",()=>{
+ musicBtn.textContent="♫ MUSIC OFF";
+ musicBtn.setAttribute("aria-pressed","false");
+});
+
 document.getElementById("homeBtn").addEventListener("click",()=>{setScreen("welcome");});
 document.getElementById("resetBtn").addEventListener("click",()=>{if(confirm("پیشرفت این دور پاک شود و سایت از اول شروع شود؟"))restart();});
 render();
